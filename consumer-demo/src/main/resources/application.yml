@@ -1,0 +1,29 @@
+server:
+  port: 9997
+spring:
+  application:
+    name: consumer-demo
+eureka:
+  client:
+    defaultZone: http://localhost:8761/eureka/
+feign:
+  hystrix:
+    enabled: true #开启客户端 hystrix
+######################### Ribbon 客户端超时控制 ###################################
+ribbon:
+  ReadTimeout: 1000 #建立连接所用的时间，适用于网络状况正常的情况下，两端两端连接所用的时间
+  ConnectionTimeout: 1000 #建立连接后，服务器读取到可用资源的时间
+######################配置请求超时时间##########################
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1000
+    ####################配置具体方法超时时间 为 3 秒########################
+    DeptHystrixService#deptInfo_Timeout(Integer):
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1000
