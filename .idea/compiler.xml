@@ -7,9 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="provide-demo" />
-        <module name="api-gateway" />
-        <module name="consumer-demo" />
         <module name="eureka" />
+        <module name="consumer-demo" />
+        <module name="sleuth-zipkin" />
+        <module name="api-gateway" />
       </profile>
     </annotationProcessing>
   </component>
@@ -19,6 +20,7 @@
       <module name="consumer-demo" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="provide-demo" options="-parameters" />
+      <module name="sleuth-zipkin" options="-parameters" />
     </option>
   </component>
 </project>

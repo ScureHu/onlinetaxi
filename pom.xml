@@ -13,6 +13,7 @@
         <module>provide-demo</module>
         <module>consumer-demo</module>
         <module>api-gateway</module>
+        <module>sleuth-zipkin</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
