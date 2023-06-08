@@ -14,11 +14,12 @@
         <module>consumer-demo</module>
         <module>api-gateway</module>
         <module>sleuth-zipkin</module>
+        <module>spring-geteway</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.1.RELEASE</version>
+        <version>2.3.12.RELEASE</version>
         <relativePath/>
     </parent>
     <properties>

@@ -1,0 +1,38 @@
+spring:
+  redis:
+    host: 10.10.8.38
+    port: 6379
+  application:
+    name: spring-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: test
+          #路由地址 eureka地址 lb代表着负载均衡
+          uri: lb://PROVIDE-DEMO
+          predicates:
+            - Path=/pd/**
+          filters:
+            - StripPrefix=1
+            - name: RequestRateLimiter
+              args:
+                key-resolver: '#{@userkeyResolver}'
+                redis-rate-limiter.replenishRate: 1
+                redis-rate-limiter.burstCapacity: 3
+#        - id: test1
+#            # 灰度发布 需要uri的地址服务不同 底层是使用的随机数方法
+#            uri: lb://PROVIDE-DEMO
+#            predicates:
+#              - Path=/pd/**
+#              - weight=service,95
+#            filters:
+#              - StripPrefix=1
+server:
+  port: 1234
+
+eureka:
+  client:
+    defaultZone: http://localhost:8761/eureka/

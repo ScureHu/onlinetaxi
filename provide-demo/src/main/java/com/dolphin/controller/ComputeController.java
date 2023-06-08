@@ -27,4 +27,9 @@ public class ComputeController {
         clientServices.forEach(item -> System.out.println(item));
         return a + b;
     }
+
+    @GetMapping("/")
+    public String none() {
+        return "请求过来了";
+    }
 }
