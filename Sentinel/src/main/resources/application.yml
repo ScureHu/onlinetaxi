@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: alibaba-sentinel
+  cloud:
+    sentinel:
+      datasource:
+        ds:
+          nacos:
+            server-addr: 10.10.1.91:8848
+            dataId: config
+            groupId: SENTINEL_GROUP
+            ruleType: flow
+            username: nacos
+            password: nacos@zjyf.com
+      transport:
+        dashboard: localhost:8081
+server:
+  port: 7654

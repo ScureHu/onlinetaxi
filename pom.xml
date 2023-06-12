@@ -15,6 +15,8 @@
         <module>api-gateway</module>
         <module>sleuth-zipkin</module>
         <module>spring-geteway</module>
+        <module>nacos</module>
+        <module>Sentinel</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
