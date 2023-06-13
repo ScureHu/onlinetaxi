@@ -6,21 +6,33 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="service-verification-code" />
+        <module name="api-passenger" />
         <module name="spring-geteway" />
         <module name="sleuth-zipkin" />
+        <module name="nacos" />
         <module name="provide-demo" />
         <module name="eureka" />
+        <module name="internal-common" />
         <module name="consumer-demo" />
+        <module name="Sentinel" />
+        <module name="service-sms" />
         <module name="api-gateway" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Sentinel" options="-parameters" />
       <module name="api-gateway" options="-parameters" />
+      <module name="api-passenger" options="-parameters" />
       <module name="consumer-demo" options="-parameters" />
       <module name="eureka" options="-parameters" />
+      <module name="internal-common" options="-parameters" />
+      <module name="nacos" options="-parameters" />
       <module name="provide-demo" options="-parameters" />
+      <module name="service-sms" options="-parameters" />
+      <module name="service-verification-code" options="-parameters" />
       <module name="sleuth-zipkin" options="-parameters" />
       <module name="spring-geteway" options="-parameters" />
     </option>

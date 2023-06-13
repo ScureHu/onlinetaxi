@@ -17,6 +17,10 @@
         <module>spring-geteway</module>
         <module>nacos</module>
         <module>Sentinel</module>
+        <module>api-passenger</module>
+        <module>internal-common</module>
+        <module>service-sms</module>
+        <module>service-verification-code</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

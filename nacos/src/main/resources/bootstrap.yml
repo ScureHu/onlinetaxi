@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: alibaba-nacos
+  cloud:
+    nacos:
+      server-addr: 10.10.1.91:8848
+      username: nacos
+      password: nacos@zjyf.com
+      discovery:
+        server-addr: 10.10.1.91:8848
+      config:
+        file-extension: yaml
+server:
+  port: 8989
