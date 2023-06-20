@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -9,15 +10,15 @@
         <module name="service-verification-code" />
         <module name="api-passenger" />
         <module name="spring-geteway" />
-        <module name="sleuth-zipkin" />
         <module name="nacos" />
         <module name="provide-demo" />
         <module name="eureka" />
         <module name="internal-common" />
-        <module name="consumer-demo" />
+        <module name="sleuth-zipkin" />
         <module name="Sentinel" />
         <module name="service-sms" />
         <module name="api-gateway" />
+        <module name="consumer-demo" />
       </profile>
     </annotationProcessing>
   </component>

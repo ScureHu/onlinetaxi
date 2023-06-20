@@ -1,4 +1,4 @@
-package com.delphin.internalcommon.dto;
+package com.delphin.internalcommon.dto.verificationcode.response;
 
 import java.io.Serializable;
 
