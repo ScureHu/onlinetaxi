@@ -7,23 +7,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="service-verification-code" />
-        <module name="api-passenger" />
-        <module name="spring-geteway" />
-        <module name="nacos" />
         <module name="provide-demo" />
-        <module name="eureka" />
-        <module name="internal-common" />
-        <module name="sleuth-zipkin" />
-        <module name="Sentinel" />
-        <module name="service-sms" />
-        <module name="api-gateway" />
+        <module name="seata-account" />
+        <module name="seata-storage" />
+        <module name="api-passenger" />
+        <module name="CodeGenerator" />
+        <module name="spring-geteway" />
         <module name="consumer-demo" />
+        <module name="sleuth-zipkin" />
+        <module name="internal-common" />
+        <module name="service-sms" />
+        <module name="service-verification-code" />
+        <module name="seata-order" />
+        <module name="eureka" />
+        <module name="api-gateway" />
+        <module name="nacos" />
+        <module name="Sentinel" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="CodeGenerator" options="-parameters" />
       <module name="Sentinel" options="-parameters" />
       <module name="api-gateway" options="-parameters" />
       <module name="api-passenger" options="-parameters" />
@@ -32,6 +37,9 @@
       <module name="internal-common" options="-parameters" />
       <module name="nacos" options="-parameters" />
       <module name="provide-demo" options="-parameters" />
+      <module name="seata-account" options="-parameters" />
+      <module name="seata-order" options="-parameters" />
+      <module name="seata-storage" options="-parameters" />
       <module name="service-sms" options="-parameters" />
       <module name="service-verification-code" options="-parameters" />
       <module name="sleuth-zipkin" options="-parameters" />

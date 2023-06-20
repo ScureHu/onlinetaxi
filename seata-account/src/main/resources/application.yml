@@ -1,0 +1,33 @@
+server:
+  port: 5552
+spring:
+  application:
+    name: seata-account
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.10.8.46:3306/account?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+    username: root
+    password: 123456
+eureka:
+  client:
+    defaultZone: http://localhost:8761/eureka/
+
+######################### seata 客户端配置 ###################################
+seata:
+  enabled: true
+  application-id: ${spring.application.name}
+  tx-service-group: default_tx_group
+  ######### 最容易出错的 事务组名称 要和配置的一致 前面配置文件有说
+  config:
+    type: nacos
+    nacos:
+      server-addr: 10.10.1.91:8848
+      group: SEATA_GROUP
+      username: nacos
+      password: nacos@zjyf.com
+      data-id: config
+  registry:
+    type: eureka # 使用eureka作为注册中心
+    eureka:
+      client:
+        defaultZone: http://localhost:8761/eureka/

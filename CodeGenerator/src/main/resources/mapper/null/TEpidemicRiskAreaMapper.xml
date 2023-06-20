@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.sfnet.dc.service.mapper.TEpidemicRiskAreaMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="org.sfnet.dc.service.entity.TEpidemicRiskArea">
+        <result column="F_CODE" property="fCode" />
+        <result column="F_NAME" property="fName" />
+        <result column="F_LEVEL" property="fLevel" />
+        <result column="F_PUBLICATION_TIME" property="fPublicationTime" />
+        <result column="F_INTIME" property="fIntime" />
+        <result column="F_TASK_STIME" property="fTaskStime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        F_CODE, F_NAME, F_LEVEL, F_PUBLICATION_TIME, F_INTIME, F_TASK_STIME
+    </sql>
+
+</mapper>
