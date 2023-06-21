@@ -12,4 +12,6 @@ import org.springframework.http.ResponseEntity;
 public interface ITbOrderService extends IService<TbOrder> {
 
     ResponseEntity<Integer> createOrder(TbOrder order);
+
+    Integer createMQOrder(TbOrder order);
 }

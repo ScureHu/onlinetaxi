@@ -18,7 +18,7 @@ public class CodeGenerator {
     /**
      * 代码生成位置
      */
-    public static final String PARENT_NAME = "com.dolphin.account";
+    public static final String PARENT_NAME = "com.dolphin.order";
 
     /**
      * modular 名字
@@ -28,7 +28,7 @@ public class CodeGenerator {
     /**
      * 基本路径
      */
-    public static final String SRC_MAIN_JAVA = "seata-storage/src/main/java";
+    public static final String SRC_MAIN_JAVA = "seata-order/src/main/java";
 
     /**
      * 作者
@@ -39,7 +39,7 @@ public class CodeGenerator {
      */
     private static final boolean REST_CONTROLLER_STYLE = true;
 
-    public static final String JDBC_MYSQL_URL = "jdbc:mysql://10.10.8.46:3306/storage";
+    public static final String JDBC_MYSQL_URL = "jdbc:mysql://10.10.8.46:3306/order";
 
     public static final String JDBC_DRIVER_NAME = "com.mysql.jdbc.Driver";
 

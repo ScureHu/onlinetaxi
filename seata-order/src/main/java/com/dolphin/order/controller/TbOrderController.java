@@ -26,5 +26,12 @@ public class TbOrderController {
     public ResponseEntity<Integer> createOrder(@RequestBody TbOrder order) {
         return orderService.createOrder(order);
     }
+
+
+    @PostMapping("/createMQOrder")
+    public String createMQOrder(@RequestBody TbOrder order) {
+        orderService.createMQOrder(order);
+        return "OK";
+    }
 }
 
